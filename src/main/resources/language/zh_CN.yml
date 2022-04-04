@@ -3,7 +3,13 @@ itemgroup:
   robot: "机器人"
   materials: "材料"
   machine: "机器"
+mobs:
+  FT_SIRI:
+    name: "&eSiri机器人"
 items:
+  FT_GUIDE:
+    name: "&f合成指导手册"
+    lore: " |&7By: bxx2004"
   FT_CPU:
     name: "&f空的芯片"
     lore: " |&7一个空壳芯片|&7你可以使用&f芯片组装机&7组装它|&7前提是你有一个&f芯片模型"
@@ -13,7 +19,13 @@ items:
   FT_SIRIMODEL:
     name: "&fSiri的智能芯片模型"
     lore: " |&7只是一个模型而已|&7你可以使用&f芯片组装机&7组装它|&7合成一个Siri的智能芯片"
+  FT_ROBOTARM:
+    name: "&f机器人手臂"
+    lore: " |&7用来组装机器人|&7在&9未来世界&7击杀生物掉落"
 blocks:
   FT_CPUMAKER:
     name: "&f芯片组装机"
     lore: " |&7用于组装机器人的智能芯片|&7由你的脑电波控制|&7所以它不需要耗电 :)"
+  FT_MAKER:
+    name: "&f未来科技制造台"
+    lore: " |&7未来的高科技产物制作装置|&c它可以创造出各式的机器人|&d从而解放人类的双手"

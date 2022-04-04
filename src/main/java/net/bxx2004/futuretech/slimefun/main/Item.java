@@ -12,7 +12,6 @@ import net.bxx2004.pandalib.bukkit.plistener.PListener;
 import org.bukkit.inventory.ItemStack;
 
 public abstract class Item<T> {
-    private SlimefunItem item;
     public Item(){
         if (SlimefunItem.getById(this.getID()) == null){
             SlimefunItem item;
@@ -32,7 +31,6 @@ public abstract class Item<T> {
                     research().addItems(item);
                 }
             }
-            this.item = item;
         }
     }
     public abstract T itemStack();
@@ -42,7 +40,7 @@ public abstract class Item<T> {
     public abstract PListener listener();
     public abstract Research research();
     public SlimefunItem getItem(){
-        return this.item;
+        return SlimefunItem.getById(getID());
     }
     public String getID(){
         return this.getClass().getSimpleName();

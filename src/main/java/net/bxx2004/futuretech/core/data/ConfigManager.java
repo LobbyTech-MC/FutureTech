@@ -37,4 +37,7 @@ public class ConfigManager {
         String[] lore = FutureTech.node.lang("blocks." + itemID + ".lore").split("\\|");
         return lore;
     }
+    public static String mobName(String itemID){
+        return FutureTech.node.lang("mobs." + itemID + ".name");
+    }
 }

@@ -1,10 +1,9 @@
-package net.bxx2004.futuretech.slimefun.main.items.cpumaterials;
+package net.bxx2004.futuretech.slimefun.main.items.materials.cpu;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import net.bxx2004.futuretech.core.data.ConfigManager;
 import net.bxx2004.futuretech.core.utils.RegisterItem;
 import net.bxx2004.futuretech.slimefun.SlimefunFactory;
@@ -13,14 +12,16 @@ import net.bxx2004.pandalib.bukkit.pitem.PItemStack;
 import net.bxx2004.pandalib.bukkit.plistener.PListener;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
+
 @RegisterItem
-public class FT_SIRICPU extends Item<SlimefunItemStack> {
-    public FT_SIRICPU(){
+public class FT_CPU extends Item<PItemStack> {
+    public FT_CPU() {
         super();
     }
     @Override
-    public SlimefunItemStack itemStack() {
-        return new SlimefunItemStack("FT_SIRICPU","890b1cd0cb10dcc3e99bf4104b10360c9279fa0a2aa7bded1483359b0474e11e",ConfigManager.itemName(getID()),
+    public PItemStack itemStack() {
+        return new PItemStack(Material.WHITE_STAINED_GLASS_PANE,
+                ConfigManager.itemName(getID()),
                 ConfigManager.itemLore(getID()));
     }
 
@@ -31,18 +32,15 @@ public class FT_SIRICPU extends Item<SlimefunItemStack> {
 
     @Override
     public RecipeType type() {
-        RecipeType t = new RecipeType(SlimefunItem.getById("FT_CPUMAKER").getItem(),"FT_CPUMAKER");
-        return t;
+        return RecipeType.ENHANCED_CRAFTING_TABLE;
     }
 
     @Override
     public ItemStack[] recipe() {
         return new ItemStack[]{
-                null,null,null,
-                SlimefunItem.getById("FT_CPU").getItem(),null,new PItemStack(Material.BLUE_STAINED_GLASS_PANE,
-                ConfigManager.itemName(getID()),
-                ConfigManager.itemLore(getID())),
-                null,null,null
+                SlimefunItems.GILDED_IRON,SlimefunItems.GILDED_IRON,SlimefunItems.GILDED_IRON,
+                SlimefunItems.GILDED_IRON,null,SlimefunItems.GILDED_IRON,
+                SlimefunItems.GILDED_IRON,SlimefunItems.GILDED_IRON,SlimefunItems.GILDED_IRON
         };
     }
 

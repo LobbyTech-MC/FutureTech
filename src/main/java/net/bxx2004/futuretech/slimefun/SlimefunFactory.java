@@ -1,6 +1,5 @@
 package net.bxx2004.futuretech.slimefun;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
@@ -35,6 +34,7 @@ public class SlimefunFactory {
                     ConfigManager.color() + ConfigManager.itemGroup("materials")).clone()
     );
     public static Research CPU;
+    public static Research BASIC;
     public static void init(){
         MAIN.register(FutureTech.instance());
         ROBOT.register(FutureTech.instance());
@@ -42,6 +42,8 @@ public class SlimefunFactory {
         MATERIALS.register(FutureTech.instance());
         if (ConfigManager.enableResearch()){
             CPU = new Research(Tools.key("CPU"),1,"CPU",10);
+            BASIC = new Research(Tools.key("BASIC"),2,"BASIC",10);
+            BASIC.register();
             CPU.register();
         }
     }
