@@ -1,0 +1,19 @@
+itemgroup:
+  main: "未来科技 (FutureTech)"
+  robot: "机器人"
+  materials: "材料"
+  machine: "机器"
+items:
+  FT_CPU:
+    name: "&f空的芯片"
+    lore: " |&7一个空壳芯片|&7你可以使用&f芯片组装机&7组装它|&7前提是你有一个&f芯片模型"
+  FT_SIRICPU:
+    name: "&fSiri的智能芯片"
+    lore: " |&7由空芯片组装而来|&7你可以使用&f机器人制造台&7组装机器人|&7这是Siri机器人的核心"
+  FT_SIRIMODEL:
+    name: "&fSiri的智能芯片模型"
+    lore: " |&7只是一个模型而已|&7你可以使用&f芯片组装机&7组装它|&7合成一个Siri的智能芯片"
+blocks:
+  FT_CPUMAKER:
+    name: "&f芯片组装机"
+    lore: " |&7用于组装机器人的智能芯片|&7由你的脑电波控制|&7所以它不需要耗电 :)"
