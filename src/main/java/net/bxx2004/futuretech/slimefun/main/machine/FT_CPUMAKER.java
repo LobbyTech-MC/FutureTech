@@ -1,4 +1,4 @@
-package net.bxx2004.futuretech.slimefun.main.blocks;
+package net.bxx2004.futuretech.slimefun.main.machine;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;

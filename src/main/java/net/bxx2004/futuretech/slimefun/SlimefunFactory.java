@@ -6,7 +6,10 @@ import io.github.thebusybiscuit.slimefun4.api.researches.Research;
 import net.bxx2004.futuretech.FutureTech;
 import net.bxx2004.futuretech.core.data.ConfigManager;
 import net.bxx2004.pandalib.bukkit.pitem.PItemStack;
+import net.bxx2004.pandalib.bukkit.planguage.PAction;
+import net.bxx2004.pandalib.bukkit.putil.PMath;
 import org.bukkit.Material;
+import org.bukkit.entity.Player;
 
 public class SlimefunFactory {
     //分类注册
@@ -33,18 +36,45 @@ public class SlimefunFactory {
             new PItemStack(Material.IRON_INGOT,
                     ConfigManager.color() + ConfigManager.itemGroup("materials")).clone()
     );
+    public static final SubItemGroup OBJECT = new SubItemGroup(
+            Tools.key("object"),
+            MAIN,
+            new PItemStack(Material.DIAMOND_BLOCK,
+                    ConfigManager.color() + ConfigManager.itemGroup("object")).clone()
+    );
     public static Research CPU;
     public static Research BASIC;
+    public static Research ROBOT_R;
     public static void init(){
         MAIN.register(FutureTech.instance());
         ROBOT.register(FutureTech.instance());
         MACHINE.register(FutureTech.instance());
+        OBJECT.register(FutureTech.instance());
         MATERIALS.register(FutureTech.instance());
         if (ConfigManager.enableResearch()){
             CPU = new Research(Tools.key("CPU"),1,"CPU",10);
             BASIC = new Research(Tools.key("BASIC"),2,"BASIC",10);
+            ROBOT_R = new Research(Tools.key("ROBOT"),3,"ROBOT",10);
             BASIC.register();
             CPU.register();
+            ROBOT_R.register();
         }
+        new PAction("cooldown"){
+            @Override
+            public Object run(Player player, String... strings) {
+                String type= strings[0];
+                if (type.equalsIgnoreCase("add")){
+                    float value = Float.parseFloat(strings[1]);
+                    FutureTech.cooldown.addCoolDownOfKey("FT_SIRIROBOT",player,value);
+                }
+                if (type.equalsIgnoreCase("look")){
+                    return PMath.formatDouble(FutureTech.cooldown.lookCoolDownOfKey("FT_SIRIROBOT",player));
+                }
+                if (type.equalsIgnoreCase("is")){
+                    return FutureTech.cooldown.isCoolDown("FT_SIRIROBOT",player);
+                }
+                return null;
+            }
+        };
     }
 }

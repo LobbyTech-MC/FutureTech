@@ -41,16 +41,17 @@ public class GuideMenu extends Menu{
     @Override
     public void click(Player player, PItemStack itemStack, int slot) {
         if (pages.get(player.getName()) == null){
-            pages.put(player.getName(),0);
+            pages.put(player.getName(),-1);
         }
         if (slot == 8){
             player.closeInventory();
+            pages.put(player.getName(),0);
         }
         if (slot == 25){
-            if (pages.get(player.getName()) <= 0){
+            pages.put(player.getName(),pages.get(player.getName()) - 1);
+            if (pages.get(player.getName()) < 0){
                 player.closeInventory();
             }else {
-                pages.put(player.getName(),pages.get(player.getName()) - 1);
                 int[] lay = new int[]{9,10,11,12,13,18,19,20,21,22,27,28,29,30,31,36,37,38,39,40,45,46,47,48,49};
                 int a = 0;
                 for (int i : lay){
@@ -65,10 +66,10 @@ public class GuideMenu extends Menu{
             }
         }
         if (slot == 43){
+            pages.put(player.getName(),pages.get(player.getName()) + 1);
             if (pages.get(player.getName()) >= recipe.size()){
                 player.closeInventory();
             }else {
-                pages.put(player.getName(),pages.get(player.getName()) + 1);
                 int[] lay = new int[]{9,10,11,12,13,18,19,20,21,22,27,28,29,30,31,36,37,38,39,40,45,46,47,48,49};
                 int a = 0;
                 for (int i : lay){

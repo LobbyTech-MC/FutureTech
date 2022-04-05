@@ -7,6 +7,7 @@ import net.bxx2004.futuretech.core.utils.RegisterItem;
 import net.bxx2004.futuretech.core.utils.RegisterMenu;
 import net.bxx2004.futuretech.slimefun.SlimefunFactory;
 import net.bxx2004.pandalib.bukkit.planguage.PLangNode;
+import net.bxx2004.pandalib.bukkit.putil.PCooldown;
 import net.bxx2004.pandalibloader.BukkitPlugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
@@ -21,6 +22,7 @@ public class FutureTech extends BukkitPlugin implements SlimefunAddon {
     public static FutureTech instance(){
         return plugin;
     }
+    public static PCooldown cooldown;
     @Override
     public String getPackage() {
         return "net.bxx2004.futuretech";
@@ -30,6 +32,8 @@ public class FutureTech extends BukkitPlugin implements SlimefunAddon {
     public void onEnable() {
         plugin = this;
         saveDefaultConfig();
+        cooldown = new PCooldown(this);
+        cooldown.addKey("FT_SIRIROBOT");
         node = new PLangNode(this, ConfigManager.language());
         init();
         getLogger().info("########################################");
@@ -38,6 +42,7 @@ public class FutureTech extends BukkitPlugin implements SlimefunAddon {
         getLogger().info("########################################");
     }
     public void init(){
+        saveResource("scripts/FT_SIRIROBOT.yml",false);
         SlimefunFactory.init();
         Reflections ref = new Reflections(getPackage() + ".slimefun");
         Set<Class<?>> clazz = ref.getTypesAnnotatedWith(RegisterItem.class);

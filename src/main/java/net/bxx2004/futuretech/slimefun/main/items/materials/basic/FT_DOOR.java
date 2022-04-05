@@ -1,27 +1,26 @@
-package net.bxx2004.futuretech.slimefun.main.items.materials.cpu;
+package net.bxx2004.futuretech.slimefun.main.items.materials.basic;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
 import net.bxx2004.futuretech.core.data.ConfigManager;
 import net.bxx2004.futuretech.core.utils.RegisterItem;
 import net.bxx2004.futuretech.slimefun.SlimefunFactory;
 import net.bxx2004.futuretech.slimefun.main.Item;
-import net.bxx2004.futuretech.slimefun.main.machine.FT_CPUMAKER;
+import net.bxx2004.futuretech.slimefun.main.machine.FT_MAKER;
+import net.bxx2004.pandalib.bukkit.pitem.PItemStack;
 import net.bxx2004.pandalib.bukkit.plistener.PListener;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 @RegisterItem
-public class FT_SIRICPU extends Item<SlimefunItemStack> {
-    public FT_SIRICPU(){
+public class FT_DOOR extends Item<PItemStack> {
+    public FT_DOOR() {
         super();
     }
+
     @Override
-    public SlimefunItemStack itemStack() {
-        return new SlimefunItemStack("FT_SIRICPU","890b1cd0cb10dcc3e99bf4104b10360c9279fa0a2aa7bded1483359b0474e11e",ConfigManager.itemName(getID()),
-                ConfigManager.itemLore(getID()));
+    public PItemStack itemStack() {
+        return new PItemStack(Material.CRYING_OBSIDIAN, ConfigManager.itemName(getID()),ConfigManager.itemLore(getID()));
     }
 
     @Override
@@ -31,7 +30,7 @@ public class FT_SIRICPU extends Item<SlimefunItemStack> {
 
     @Override
     public RecipeType type() {
-        RecipeType t = new RecipeType(new FT_CPUMAKER().itemStack(),"FT_CPUMAKER");
+        RecipeType t = new RecipeType(new FT_MAKER().item().clone(),"FT_MAKER");
         return t;
     }
 
@@ -39,7 +38,7 @@ public class FT_SIRICPU extends Item<SlimefunItemStack> {
     public ItemStack[] recipe() {
         return new ItemStack[]{
                 null,null,null,
-                new FT_CPU().getItem().getItem(),null,new FT_SIRIMODEL().getItem().getItem(),
+                null,new PItemStack(Material.BOOK,"&e在指导书内查看配方"),null,
                 null,null,null
         };
     }
@@ -51,6 +50,6 @@ public class FT_SIRICPU extends Item<SlimefunItemStack> {
 
     @Override
     public Research research() {
-        return SlimefunFactory.CPU;
+        return SlimefunFactory.BASIC;
     }
 }
