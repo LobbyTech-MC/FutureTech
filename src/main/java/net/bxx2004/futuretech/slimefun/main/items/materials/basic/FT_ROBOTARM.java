@@ -4,6 +4,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
+import net.bxx2004.futuretech.FutureTech;
 import net.bxx2004.futuretech.core.data.ConfigManager;
 import net.bxx2004.futuretech.core.utils.RegisterItem;
 import net.bxx2004.futuretech.slimefun.SlimefunFactory;
@@ -12,6 +13,7 @@ import net.bxx2004.pandalib.bukkit.pentity.PEntity;
 import net.bxx2004.pandalib.bukkit.pentity.PEntityMeta;
 import net.bxx2004.pandalib.bukkit.pitem.PItemStack;
 import net.bxx2004.pandalib.bukkit.plistener.PListener;
+import net.bxx2004.pandalib.bukkit.putil.PMath;
 import org.bukkit.Material;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.EntityType;
@@ -21,6 +23,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.metadata.FixedMetadataValue;
 
 @RegisterItem
 public class FT_ROBOTARM extends Item<SlimefunItemStack> {
@@ -60,23 +63,12 @@ public class FT_ROBOTARM extends Item<SlimefunItemStack> {
                   LivingEntity entity = event.getEntity();
                   if (entity.getCustomName() != null){
                       if (entity.getCustomName().equals(ConfigManager.mobName("FT_SIRI"))){
-                          event.getDrops().add(getItem().getItem());
+                          if (entity.hasMetadata("FutureTech")){
+                              if (PMath.getRandomAsInt(0,10) > 6){
+                                  event.getDrops().add(getItem().getItem());
+                              }
+                          }
                       }
-                  }
-              }
-          }
-          @EventHandler
-          public void onSpawn(EntitySpawnEvent event){
-              if (event.getLocation().getWorld().getName().equals("ft_world")){
-                  if (event.getEntity() instanceof Vindicator){
-                      event.setCancelled(true);
-                      PEntity entity = new PEntity(EntityType.VINDICATOR);
-                      PEntityMeta meta = entity.getMeta();
-                      meta.setDisplayName(ConfigManager.mobName("FT_SIRI"));
-                      meta.setHealth(200);
-                      meta.addAttribute(Attribute.GENERIC_ATTACK_DAMAGE,7);
-                      entity.setMeta(meta);
-                      entity.spawn(event.getLocation());
                   }
               }
           }
