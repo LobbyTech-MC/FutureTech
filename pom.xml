@@ -9,8 +9,8 @@
     <version>8</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <repositories>
@@ -35,7 +35,7 @@
         <dependency>
             <groupId>com.github.SlimefunGuguProject</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>b39097e015</version>
+            <version>2025.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
