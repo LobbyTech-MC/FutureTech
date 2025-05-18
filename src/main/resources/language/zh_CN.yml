@@ -10,11 +10,26 @@ mobs:
   FT_METEOR:
     name: "&e珠宝守护者"
   FT_BOOS:
-    name: "&e陨星机械龙"
+    name: "&e超级机械龙"
 items:
+  FT_COPPERSWORD:
+    name: "&f陨铜剑"
+    lore: " |&7陨铜打造而成|&7具有非凡的威力|&7攻击时有10%几率给予对手迷幻效果"
+  FT_SEARCHER:
+    name: "&f陨石搜寻者"
+    lore: " |&7使用它可以提取陨铜矿物|&7一次性物品,无法充电"
+  FT_COOPER:
+    name: "&f陨石矿"
+    lore: " |&7在未来世界地表产出"
+  FT_METEORCOPPER:
+    name: "&f陨铜"
+    lore: " |&7精致的陨铜|&7我猜你看过三叔写的《老九门》"
   FT_ENERGYORE:
     name: "&f能晶矿"
     lore: " |&7在未来世界产出"
+  FT_ENERGYBLOCK:
+    name: "&f能晶块"
+    lore: " |&7蕴含着巨大的能量|&7由稀有的能晶矿合成"
   FT_GUIDE:
     name: "&f合成指导手册"
     lore: " |&7By: bxx2004"
