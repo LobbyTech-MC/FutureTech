@@ -1,7 +1,7 @@
-Title: "Hi Siri机器人"
+Title: "思锐机器人"
 Index:
   - "EEEEEEEEE"
-  - " 1  2  3 "
+  - "    1    "
   - "EEEEEEEEE"
 Button:
   E:
@@ -18,20 +18,20 @@ Button:
     Action:
       - "var a = cooldown look"
       - "if (cooldown is) title 您正在冷却时间! => actionbar $a : cooldown add 600 => title &a充电成功! => command op sf charge"
-  2:
-    DisPlayName: "&c与我聊天!"
-    Amount: 1
-    Material: "BOOK"
-    Lore:
-      - "&b与Siri聊天?"
-      - "&c只需唤醒Siri时加入内容即可"
-      - "&9例如: Hi Siri 你好吗?"
-  3:
-    DisPlayName: "&c自定功能!"
-    Amount: 1
-    Material: "DIAMOND"
-    Lore:
-      - "&b与自定义服务器的Siri?"
-      - "&c请前往下面的地址更改内容吧"
-      - "&9FutureTech/scripts/FT_SIRIROBOT.yml"
-      - "感谢您的使用!"
+  #2:
+  #  DisPlayName: "&c与我聊天!"
+  #  Amount: 1
+  #  Material: "BOOK"
+  #  Lore:
+  #    - "&b与思锐聊天?"
+  #    - "&c只需唤醒思锐时加入内容即可"
+  #    - "&9例如: 嘿 思锐 你好吗?"
+  #3:
+  #  DisPlayName: "&c自定功能!"
+  #  Amount: 1
+  #  Material: "DIAMOND"
+  #  Lore:
+  #    - "&b与自定义服务器的思锐?"
+  #    - "&c请前往下面的地址更改内容吧"
+  #    - "&9FutureTech/scripts/FT_SIRIROBOT.yml"
+  #    - "感谢您的使用!"
