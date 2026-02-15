@@ -36,7 +36,7 @@ public class FT_ENERGYORE extends Item<SlimefunItemStack> {
 
     @Override
     public ItemStack[] recipe() {
-        return new ItemStack[]{null, null, null, null, new PItemStack(Material.DEEPSLATE_LAPIS_ORE, "由未来世界产出"), null, null, null, null};
+        return new ItemStack[]{null, null, null, null, new PItemStack(Material.DEEPSLATE_LAPIS_ORE, "由智能世界产出"), null, null, null, null};
     }
 
     @Override

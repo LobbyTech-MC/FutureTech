@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 @RegisterMenu
 public class CraftMenu extends Menu {
-    private static ChestMenu inventory = new ChestMenu("未来科技制造台", 54);
+    private static ChestMenu inventory = new ChestMenu("智能工艺制造台", 54);
 
     public CraftMenu() {
         super();
