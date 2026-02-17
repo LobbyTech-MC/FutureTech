@@ -1,6 +1,7 @@
 package net.bxx2004.futuretech.slimefun.main.items.robot;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
@@ -73,29 +74,37 @@ public class FT_SIRIROBOT extends Item<SlimefunItemStack> {
                 new BukkitRunnable() {
                     @Override
                     public void run() {
-                        Location location = event.getPlayer().getLocation();
-                        int radius = 10;
-                        for (int x = -radius; x <= radius; ++x) {
-                            for (int y = -radius; y <= radius; ++y) {
-                                for (int z = -radius; z <= radius; ++z) {
-                                    Block blockAt = event.getPlayer().getWorld().getBlockAt(location.clone().add((double) x, (double) y, (double) z));
-                                    if (BlockStorage.hasBlockInfo(blockAt)) {
-                                        if (BlockStorage.check(blockAt).getId().equalsIgnoreCase("FT_SIRIROBOT")) {
-                                            if (event.getMessage().equalsIgnoreCase("Hi Siri")) {
-                                                PMenuBuilder builder = new PMenuBuilder("FutureTech", new PYml("plugins/FutureTech/scripts/FT_SIRIROBOT.yml", false));
-                                                builder.open(event.getPlayer(), true);
-                                                return;
-                                            }
-                                            if (event.getMessage().contains("Hi Siri")) {
-                                                PTitle.To(event.getPlayer(), "服务器可能会响应过慢,请耐心等候...");
-                                                String message = event.getMessage().replaceAll("Hi Siri", "").replaceAll(" ", "");
-                                                replay(message, event.getPlayer(), blockAt.getLocation().getNearbyEntities(10, 10, 10));
+                    	Bukkit.getScheduler().runTaskAsynchronously(FutureTech.instance(), () -> {
+                    		
+                    		Location location = event.getPlayer().getLocation();
+                            int radius = 10;
+                            for (int x = -radius; x <= radius; ++x) {
+                                for (int y = -radius; y <= radius; ++y) {
+                                    for (int z = -radius; z <= radius; ++z) {
+                                        Block blockAt = event.getPlayer().getWorld().getBlockAt(location.clone().add((double) x, (double) y, (double) z));
+                                        if (blockAt == null || blockAt.getType() == Material.AIR || blockAt.getType() != SlimefunItem.getById("FT_SIRIROBOT").getItem().getType()) return;
+                                        if (BlockStorage.hasBlockInfo(blockAt)) {
+                                            if (BlockStorage.check(blockAt).getId().equalsIgnoreCase("FT_SIRIROBOT")) {
+                                                if (event.getMessage().equalsIgnoreCase("Hi Siri")) {
+                                                    PMenuBuilder builder = new PMenuBuilder("FutureTech", new PYml("plugins/FutureTech/scripts/FT_SIRIROBOT.yml", false));
+                                                    builder.open(event.getPlayer(), true);
+                                                    return;
+                                                }
+                                                if (event.getMessage().contains("Hi Siri")) {
+                                                    PTitle.To(event.getPlayer(), "服务器可能会响应过慢,请耐心等候...");
+                                                    String message = event.getMessage().replaceAll("Hi Siri", "").replaceAll(" ", "");
+                                                    replay(message, event.getPlayer(), blockAt.getLocation().getNearbyEntities(10, 10, 10));
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
-                        }
+                            
+                    	});
+                    	
+                    	
+                        
                     }
                 }.runTask(FutureTech.instance());
             }
