@@ -82,7 +82,7 @@ public class FT_SIRIROBOT extends Item<SlimefunItemStack> {
                                 for (int y = -radius; y <= radius; ++y) {
                                     for (int z = -radius; z <= radius; ++z) {
                                         Block blockAt = event.getPlayer().getWorld().getBlockAt(location.clone().add((double) x, (double) y, (double) z));
-                                        if (blockAt == null || blockAt.getType() == Material.AIR || blockAt.getType() != SlimefunItem.getById("FT_SIRIROBOT").getItem().getType()) return;
+                                        if (blockAt == null || blockAt.getType() == Material.AIR || blockAt.getType() != SlimefunItem.getById("FT_SIRIROBOT").getItem().getType()) continue;
                                         if (BlockStorage.hasBlockInfo(blockAt)) {
                                             if (BlockStorage.check(blockAt).getId().equalsIgnoreCase("FT_SIRIROBOT")) {
                                                 if (event.getMessage().equalsIgnoreCase("Hi Siri")) {
