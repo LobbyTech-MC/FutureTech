@@ -90,7 +90,10 @@ public class FutureTech extends BukkitPlugin implements SlimefunAddon {
             new MultiPluginDependTask() {
                 @Depend(name = "Multiverse-Core", version = "all", asynchronous = false)
                 public void mu() {
-                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mv import ft_world normal");
+                	if (Bukkit.getWorld("ft_world") == null) {
+                		Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mv import ft_world normal");
+                	}
+                    
                 }
 
                 @Depend(name = "MyWorlds", version = "all", asynchronous = false)
