@@ -1,5 +1,7 @@
 package net.bxx2004.futuretech.slimefun.main;
 
+import org.bukkit.inventory.ItemStack;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -9,7 +11,6 @@ import net.bxx2004.futuretech.FutureTech;
 import net.bxx2004.futuretech.core.data.ConfigManager;
 import net.bxx2004.pandalib.bukkit.item.PItemStack;
 import net.bxx2004.pandalib.bukkit.listener.PListener;
-import org.bukkit.inventory.ItemStack;
 
 public abstract class Item<T> {
     public Item() {

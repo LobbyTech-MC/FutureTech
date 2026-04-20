@@ -1,9 +1,9 @@
 package net.bxx2004.pandalib.java.sql.mysql;
 
-import net.bxx2004.pandalib.java.sql.SQLConnection;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
+
+import net.bxx2004.pandalib.java.sql.SQLConnection;
 
 /**
  * MySQL数据库连接

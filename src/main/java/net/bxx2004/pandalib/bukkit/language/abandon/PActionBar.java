@@ -1,10 +1,11 @@
 package net.bxx2004.pandalib.bukkit.language.abandon;
 
+import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
+
 import net.bxx2004.pandalib.PandaLib;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
 /**
  * 动作栏工具类

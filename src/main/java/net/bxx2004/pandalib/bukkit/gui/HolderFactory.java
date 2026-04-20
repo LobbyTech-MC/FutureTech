@@ -1,9 +1,9 @@
 package net.bxx2004.pandalib.bukkit.gui;
 
+import java.util.HashMap;
+
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
-
-import java.util.HashMap;
 
 public interface HolderFactory {
     static HashMap<String, InventoryHolder> map = new HashMap<>();

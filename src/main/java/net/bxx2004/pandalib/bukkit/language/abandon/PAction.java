@@ -1,10 +1,11 @@
 package net.bxx2004.pandalib.bukkit.language.abandon;
 
-import net.bxx2004.pandalib.PandaLib;
-import net.bxx2004.pandalib.bukkit.manager.Lang;
+import java.util.HashMap;
+
 import org.bukkit.entity.Player;
 
-import java.util.HashMap;
+import net.bxx2004.pandalib.PandaLib;
+import net.bxx2004.pandalib.bukkit.manager.Lang;
 
 /**
  * 执行特殊的动作

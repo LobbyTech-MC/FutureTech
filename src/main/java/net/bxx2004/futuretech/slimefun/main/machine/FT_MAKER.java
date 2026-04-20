@@ -1,5 +1,12 @@
 package net.bxx2004.futuretech.slimefun.main.machine;
 
+import org.bukkit.Material;
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.scheduler.BukkitRunnable;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
@@ -18,12 +25,6 @@ import net.bxx2004.futuretech.slimefun.main.items.materials.cpu.FT_SIRICPU;
 import net.bxx2004.futuretech.slimefun.main.items.object.FT_COPPERSWORD;
 import net.bxx2004.futuretech.slimefun.main.items.robot.FT_SIRIROBOT;
 import net.bxx2004.pandalib.bukkit.item.PItemStack;
-import org.bukkit.Material;
-import org.bukkit.block.Block;
-import org.bukkit.block.BlockFace;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
 
 @RegisterBlock
 public class FT_MAKER extends Blocks {

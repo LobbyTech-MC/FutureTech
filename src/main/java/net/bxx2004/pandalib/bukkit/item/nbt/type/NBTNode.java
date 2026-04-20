@@ -1,14 +1,14 @@
 package net.bxx2004.pandalib.bukkit.item.nbt.type;
 
-import net.bxx2004.pandalib.bukkit.item.nbt.NBTMeta;
-import net.bxx2004.pandalib.bukkit.util.PNMS;
-import net.bxx2004.pandalib.java.reflect.PJVariable;
+import static net.bxx2004.pandalib.bukkit.item.nbt.NBTMeta.numberType;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import static net.bxx2004.pandalib.bukkit.item.nbt.NBTMeta.numberType;
+import net.bxx2004.pandalib.bukkit.item.nbt.NBTMeta;
+import net.bxx2004.pandalib.bukkit.util.PNMS;
+import net.bxx2004.pandalib.java.reflect.PJVariable;
 
 @Deprecated
 public class NBTNode implements NBTData {

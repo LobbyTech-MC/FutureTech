@@ -1,16 +1,17 @@
 package net.bxx2004.pandalib.bukkit.language.component;
 
-import net.bxx2004.pandalib.PandaLib;
-import net.bxx2004.pandalib.bukkit.language.AnimationText;
-import net.bxx2004.pandalib.bukkit.language.TextBox;
-import net.bxx2004.pandalib.bukkit.language.TextType;
-import net.bxx2004.pandalib.bukkit.manager.Lang;
+import java.util.Arrays;
+
 import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.util.Arrays;
+import net.bxx2004.pandalib.PandaLib;
+import net.bxx2004.pandalib.bukkit.language.AnimationText;
+import net.bxx2004.pandalib.bukkit.language.TextBox;
+import net.bxx2004.pandalib.bukkit.language.TextType;
+import net.bxx2004.pandalib.bukkit.manager.Lang;
 
 public class Title extends AnimationText {
     private TextType type;

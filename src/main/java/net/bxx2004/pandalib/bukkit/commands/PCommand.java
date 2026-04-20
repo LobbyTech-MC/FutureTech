@@ -1,7 +1,13 @@
 package net.bxx2004.pandalib.bukkit.commands;
 
-import net.bxx2004.pandalib.bukkit.language.abandon.PHelper;
-import net.bxx2004.pandalib.bukkit.language.application.PLangNode;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
 import org.bukkit.command.CommandMap;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.PluginCommand;
@@ -10,13 +16,8 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.SimplePluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import net.bxx2004.pandalib.bukkit.language.abandon.PHelper;
+import net.bxx2004.pandalib.bukkit.language.application.PLangNode;
 
 /**
  * 更友好的命令系统(直接继承)

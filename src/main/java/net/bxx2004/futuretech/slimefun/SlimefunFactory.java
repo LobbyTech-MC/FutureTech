@@ -1,5 +1,8 @@
 package net.bxx2004.futuretech.slimefun;
 
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+
 import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
@@ -24,8 +27,6 @@ import net.bxx2004.futuretech.slimefun.main.machine.FT_MAKER;
 import net.bxx2004.pandalib.bukkit.item.PItemStack;
 import net.bxx2004.pandalib.bukkit.language.abandon.PAction;
 import net.bxx2004.pandalib.bukkit.util.PMath;
-import org.bukkit.Material;
-import org.bukkit.entity.Player;
 
 public class SlimefunFactory {
     //分类注册

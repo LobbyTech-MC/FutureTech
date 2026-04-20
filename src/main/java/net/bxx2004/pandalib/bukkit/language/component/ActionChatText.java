@@ -1,12 +1,13 @@
 package net.bxx2004.pandalib.bukkit.language.component;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.bukkit.command.CommandSender;
+
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.command.CommandSender;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ActionChatText extends ChatText {
     private TextComponent text;

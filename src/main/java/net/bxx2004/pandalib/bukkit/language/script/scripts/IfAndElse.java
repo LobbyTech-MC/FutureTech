@@ -1,15 +1,16 @@
 package net.bxx2004.pandalib.bukkit.language.script.scripts;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.bukkit.command.CommandSender;
+
 import net.bxx2004.pandalib.bukkit.language.script.Script;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptBox;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptHandler;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptImpl;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptUtil;
 import net.bxx2004.pandalib.bukkit.util.PMath;
-import org.bukkit.command.CommandSender;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /*
     if (条件) {

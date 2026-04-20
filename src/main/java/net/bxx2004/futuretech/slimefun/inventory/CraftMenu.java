@@ -1,14 +1,15 @@
 package net.bxx2004.futuretech.slimefun.inventory;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-import net.bxx2004.futuretech.core.utils.RegisterMenu;
-import net.bxx2004.pandalib.bukkit.item.PItemStack;
+import java.util.HashMap;
+
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.HashMap;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
+import net.bxx2004.futuretech.core.utils.RegisterMenu;
+import net.bxx2004.pandalib.bukkit.item.PItemStack;
 
 @RegisterMenu
 public class CraftMenu extends Menu {

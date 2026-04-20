@@ -1,6 +1,8 @@
 package net.bxx2004.pandalib.bukkit.entity;
 
-import net.bxx2004.pandalib.bukkit.listener.PListener;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.attribute.Attribute;
@@ -9,8 +11,7 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-import java.util.HashMap;
-import java.util.Map;
+import net.bxx2004.pandalib.bukkit.listener.PListener;
 
 /**
  * 快速创建一个实体

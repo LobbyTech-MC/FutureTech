@@ -1,5 +1,8 @@
 package net.bxx2004.futuretech.slimefun.main.items.materials.basic;
 
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.researches.Research;
@@ -9,8 +12,6 @@ import net.bxx2004.futuretech.slimefun.SlimefunFactory;
 import net.bxx2004.futuretech.slimefun.main.Item;
 import net.bxx2004.pandalib.bukkit.item.PItemStack;
 import net.bxx2004.pandalib.bukkit.listener.PListener;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
 
 @RegisterItem
 public class FT_METEORCOPPER extends Item<PItemStack> {

@@ -1,9 +1,9 @@
 package net.bxx2004.pandalib.bukkit.task.data;
 
-import net.bxx2004.pandalib.PandaLib;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+
+import net.bxx2004.pandalib.PandaLib;
 
 public abstract class ConfigTask {
     {

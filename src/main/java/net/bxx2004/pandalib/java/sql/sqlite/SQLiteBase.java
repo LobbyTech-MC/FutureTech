@@ -1,11 +1,5 @@
 package net.bxx2004.pandalib.java.sql.sqlite;
 
-import net.bxx2004.pandalib.java.sql.SQL;
-import net.bxx2004.pandalib.java.sql.SQLBase;
-import net.bxx2004.pandalib.java.sql.SQLData;
-import net.bxx2004.pandalib.java.sql.SQLDataTerm;
-import net.bxx2004.pandalib.java.sql.SQLPlatForm;
-
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -13,6 +7,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import net.bxx2004.pandalib.java.sql.SQL;
+import net.bxx2004.pandalib.java.sql.SQLBase;
+import net.bxx2004.pandalib.java.sql.SQLData;
+import net.bxx2004.pandalib.java.sql.SQLDataTerm;
+import net.bxx2004.pandalib.java.sql.SQLPlatForm;
 
 public class SQLiteBase implements SQLBase {
     private SQLiteConnection connection;

@@ -1,11 +1,12 @@
 package net.bxx2004.pandalib.bukkit.language.script.scripts;
 
+import org.bukkit.command.CommandSender;
+
 import net.bxx2004.pandalib.bukkit.language.script.Script;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptBox;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptHandler;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptImpl;
 import net.bxx2004.pandalib.bukkit.util.PMath;
-import org.bukkit.command.CommandSender;
 
 /*
     for (1) {

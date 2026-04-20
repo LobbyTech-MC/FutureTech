@@ -1,15 +1,17 @@
 package net.bxx2004.pandalib.bukkit.util;
 
-import net.bxx2004.pandalib.PandaLib;
-import org.bukkit.plugin.Plugin;
-
-import javax.swing.*;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import javax.swing.SwingUtilities;
+
+import org.bukkit.plugin.Plugin;
+
+import net.bxx2004.pandalib.PandaLib;
 
 /**
  * 快速下载文件的工具

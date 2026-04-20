@@ -1,8 +1,7 @@
 package net.bxx2004.pandalib.bukkit.gui;
 
-import net.bxx2004.pandalib.PandaLib;
-import net.bxx2004.pandalib.bukkit.item.PItemStack;
-import net.bxx2004.pandalib.bukkit.listener.PListener;
+import java.util.HashMap;
+
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -10,7 +9,9 @@ import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.Inventory;
 
-import java.util.HashMap;
+import net.bxx2004.pandalib.PandaLib;
+import net.bxx2004.pandalib.bukkit.item.PItemStack;
+import net.bxx2004.pandalib.bukkit.listener.PListener;
 
 public abstract class PMenu implements HolderFactory {
     public PMenu() {

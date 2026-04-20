@@ -1,9 +1,10 @@
 package net.bxx2004.pandalib.bukkit.listener;
 
-import net.bxx2004.pandalib.bukkit.util.PPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
+
+import net.bxx2004.pandalib.bukkit.util.PPlugin;
 
 /**
  * 简单的监听器

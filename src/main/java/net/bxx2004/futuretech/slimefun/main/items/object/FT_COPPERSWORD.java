@@ -1,5 +1,13 @@
 package net.bxx2004.futuretech.slimefun.main.items.object;
 
+import org.bukkit.Material;
+import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.potion.PotionEffect;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
@@ -14,15 +22,6 @@ import net.bxx2004.futuretech.slimefun.main.machine.FT_MAKER;
 import net.bxx2004.pandalib.bukkit.item.PItemStack;
 import net.bxx2004.pandalib.bukkit.listener.PListener;
 import net.bxx2004.pandalib.bukkit.util.PMath;
-import org.bukkit.Material;
-import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.potion.PotionEffect;
-import org.bukkit.potion.PotionEffectType;
 
 @RegisterItem
 public class FT_COPPERSWORD extends Item<PItemStack> {

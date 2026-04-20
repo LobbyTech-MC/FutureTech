@@ -1,15 +1,16 @@
 package net.bxx2004.pandalib.bukkit.language.component;
 
+import org.bukkit.Sound;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
+
 import net.bxx2004.pandalib.PandaLib;
 import net.bxx2004.pandalib.bukkit.language.AnimationText;
 import net.bxx2004.pandalib.bukkit.language.TextBox;
 import net.bxx2004.pandalib.bukkit.language.TextType;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.Sound;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
 public class ActionBar extends AnimationText {
     private TextBox box;

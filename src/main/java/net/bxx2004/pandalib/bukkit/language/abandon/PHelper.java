@@ -1,15 +1,16 @@
 package net.bxx2004.pandalib.bukkit.language.abandon;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.Plugin;
+
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.Plugin;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * 一个命令帮助的模板

@@ -1,8 +1,7 @@
 package net.bxx2004.pandalib.bukkit.gui.predefine;
 
-import net.bxx2004.pandalib.bukkit.gui.HolderFactory;
-import net.bxx2004.pandalib.bukkit.gui.PMenu;
-import net.bxx2004.pandalib.bukkit.item.PItemStack;
+import java.util.HashMap;
+
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -11,7 +10,9 @@ import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 
-import java.util.HashMap;
+import net.bxx2004.pandalib.bukkit.gui.HolderFactory;
+import net.bxx2004.pandalib.bukkit.gui.PMenu;
+import net.bxx2004.pandalib.bukkit.item.PItemStack;
 
 public class StorgeMenu extends PMenu {
     public static HashMap<String, StorgeMenu> datas = new HashMap<String, StorgeMenu>();

@@ -1,12 +1,13 @@
 package net.bxx2004.pandalib.bukkit.language.script;
 
-import net.bxx2004.pandalib.bukkit.manager.Lang;
-import net.bxx2004.pandalib.bukkit.util.PMath;
-import org.bukkit.command.CommandSender;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import org.bukkit.command.CommandSender;
+
+import net.bxx2004.pandalib.bukkit.manager.Lang;
+import net.bxx2004.pandalib.bukkit.util.PMath;
 
 public class ScriptUtil {
     public static HashMap<String, Object> vars = new HashMap<String, Object>();

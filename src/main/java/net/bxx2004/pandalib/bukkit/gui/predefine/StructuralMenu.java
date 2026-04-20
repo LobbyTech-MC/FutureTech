@@ -1,8 +1,9 @@
 package net.bxx2004.pandalib.bukkit.gui.predefine;
 
-import net.bxx2004.pandalib.bukkit.gui.HolderFactory;
-import net.bxx2004.pandalib.bukkit.gui.PMenu;
-import net.bxx2004.pandalib.bukkit.item.PItemStack;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import org.bukkit.Bukkit;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
@@ -10,9 +11,9 @@ import org.bukkit.event.inventory.InventoryOpenEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import net.bxx2004.pandalib.bukkit.gui.HolderFactory;
+import net.bxx2004.pandalib.bukkit.gui.PMenu;
+import net.bxx2004.pandalib.bukkit.item.PItemStack;
 
 public class StructuralMenu extends PMenu {
     String[] index;

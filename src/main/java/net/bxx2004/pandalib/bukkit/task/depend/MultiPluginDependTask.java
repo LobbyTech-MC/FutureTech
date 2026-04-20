@@ -1,10 +1,11 @@
 package net.bxx2004.pandalib.bukkit.task.depend;
 
-import net.bxx2004.pandalib.bukkit.util.PPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+
+import org.bukkit.scheduler.BukkitRunnable;
+
+import net.bxx2004.pandalib.bukkit.util.PPlugin;
 
 public abstract class MultiPluginDependTask {
     {

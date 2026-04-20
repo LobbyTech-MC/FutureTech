@@ -1,10 +1,10 @@
 package net.bxx2004.pandalib.bukkit.entity;
 
+import java.util.HashMap;
+
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.EntityType;
 import org.bukkit.potion.PotionEffectType;
-
-import java.util.HashMap;
 
 /**
  * PEntity的属性类

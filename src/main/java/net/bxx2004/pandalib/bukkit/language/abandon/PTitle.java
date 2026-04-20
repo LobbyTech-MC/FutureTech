@@ -1,9 +1,10 @@
 package net.bxx2004.pandalib.bukkit.language.abandon;
 
-import net.bxx2004.pandalib.PandaLib;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
+
+import net.bxx2004.pandalib.PandaLib;
 
 /**
  * 一个Title标题工具类

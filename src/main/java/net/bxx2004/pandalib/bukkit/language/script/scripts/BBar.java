@@ -1,16 +1,17 @@
 package net.bxx2004.pandalib.bukkit.language.script.scripts;
 
-import net.bxx2004.pandalib.bukkit.language.component.BossBar;
-import net.bxx2004.pandalib.bukkit.language.script.Script;
-import net.bxx2004.pandalib.bukkit.language.script.ScriptBox;
-import net.bxx2004.pandalib.bukkit.language.script.ScriptImpl;
-import net.bxx2004.pandalib.bukkit.language.script.ScriptUtil;
+import java.util.HashMap;
+
 import org.bukkit.boss.BarColor;
 import org.bukkit.boss.BarFlag;
 import org.bukkit.boss.BarStyle;
 import org.bukkit.command.CommandSender;
 
-import java.util.HashMap;
+import net.bxx2004.pandalib.bukkit.language.component.BossBar;
+import net.bxx2004.pandalib.bukkit.language.script.Script;
+import net.bxx2004.pandalib.bukkit.language.script.ScriptBox;
+import net.bxx2004.pandalib.bukkit.language.script.ScriptImpl;
+import net.bxx2004.pandalib.bukkit.language.script.ScriptUtil;
 
 @Script
 //bossbar clear id

@@ -1,16 +1,17 @@
 package net.bxx2004.pandalib.bukkit.util;
 
-import net.bxx2004.pandalib.bukkit.language.abandon.PAction;
-import net.bxx2004.pandalib.bukkit.language.abandon.PMessage;
-import net.bxx2004.pandalib.bukkit.manager.Lang;
-import org.bukkit.entity.Player;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.bukkit.entity.Player;
+
+import net.bxx2004.pandalib.bukkit.language.abandon.PAction;
+import net.bxx2004.pandalib.bukkit.language.abandon.PMessage;
+import net.bxx2004.pandalib.bukkit.manager.Lang;
 
 /**
  * 数学工具

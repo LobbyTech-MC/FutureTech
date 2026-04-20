@@ -1,16 +1,17 @@
 package net.bxx2004.futuretech.slimefun.inventory;
 
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-import net.bxx2004.pandalib.bukkit.item.PItemStack;
-import net.bxx2004.pandalib.bukkit.listener.PListener;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.inventory.InventoryClickEvent;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.inventory.InventoryClickEvent;
+
+import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
+import net.bxx2004.pandalib.bukkit.item.PItemStack;
+import net.bxx2004.pandalib.bukkit.listener.PListener;
 
 public abstract class Menu {
     public static HashMap<Integer, String> hookList = new HashMap<>();

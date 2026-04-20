@@ -1,14 +1,15 @@
 package net.bxx2004.pandalib.bukkit.language;
 
-import net.md_5.bungee.api.ChatColor;
-import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
-
 import java.io.BufferedReader;
 import java.io.StringReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+
+import net.md_5.bungee.api.ChatColor;
 
 public abstract class Text {
     public static final Pattern HEX_PATTERN = Pattern.compile("&#(\\w{5}[0-9a-f])");

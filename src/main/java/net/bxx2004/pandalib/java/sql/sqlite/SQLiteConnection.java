@@ -1,9 +1,9 @@
 package net.bxx2004.pandalib.java.sql.sqlite;
 
-import net.bxx2004.pandalib.java.sql.SQLConnection;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
+
+import net.bxx2004.pandalib.java.sql.SQLConnection;
 
 public class SQLiteConnection implements SQLConnection {
     private Connection connection;

@@ -1,12 +1,13 @@
 package net.bxx2004.pandalib.bukkit.language.abandon;
 
-import net.bxx2004.pandalib.PandaLib;
 import org.bukkit.Bukkit;
 import org.bukkit.boss.BarColor;
 import org.bukkit.boss.BarStyle;
 import org.bukkit.boss.BossBar;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
+
+import net.bxx2004.pandalib.PandaLib;
 
 /**
  * 关于血条显示的工具

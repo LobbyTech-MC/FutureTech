@@ -1,5 +1,9 @@
 package net.bxx2004.pandalib.bukkit.util;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.HandlerList;
@@ -8,10 +12,6 @@ import org.bukkit.plugin.InvalidDescriptionException;
 import org.bukkit.plugin.InvalidPluginException;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredListener;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 管理插件的工具类

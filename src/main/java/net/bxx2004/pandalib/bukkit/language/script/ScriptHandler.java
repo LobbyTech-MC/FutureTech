@@ -1,10 +1,11 @@
 package net.bxx2004.pandalib.bukkit.language.script;
 
-import net.bxx2004.pandalib.bukkit.manager.Lang;
-import org.bukkit.command.CommandSender;
-
 import java.util.HashMap;
 import java.util.List;
+
+import org.bukkit.command.CommandSender;
+
+import net.bxx2004.pandalib.bukkit.manager.Lang;
 
 public abstract class ScriptHandler implements ScriptImpl {
     public static HashMap<String, ScriptImpl> handlers = new HashMap<>();

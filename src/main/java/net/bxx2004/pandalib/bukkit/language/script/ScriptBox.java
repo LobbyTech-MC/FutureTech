@@ -1,13 +1,14 @@
 package net.bxx2004.pandalib.bukkit.language.script;
 
-import net.bxx2004.pandalib.bukkit.util.PMath;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Consumer;
+
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Consumer;
+import net.bxx2004.pandalib.bukkit.util.PMath;
 
 public class ScriptBox {
     private String origin;

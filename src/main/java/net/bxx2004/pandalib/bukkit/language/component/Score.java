@@ -1,11 +1,8 @@
 package net.bxx2004.pandalib.bukkit.language.component;
 
-import me.clip.placeholderapi.PlaceholderAPI;
-import net.bxx2004.futuretech.FutureTech;
-import net.bxx2004.pandalib.bukkit.language.Text;
-import net.bxx2004.pandalib.bukkit.language.TextType;
-import net.bxx2004.pandalib.bukkit.language.abandon.PMessage;
-import net.bxx2004.pandalib.bukkit.task.Task;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -13,8 +10,12 @@ import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
-import java.util.ArrayList;
-import java.util.List;
+import me.clip.placeholderapi.PlaceholderAPI;
+import net.bxx2004.futuretech.FutureTech;
+import net.bxx2004.pandalib.bukkit.language.Text;
+import net.bxx2004.pandalib.bukkit.language.TextType;
+import net.bxx2004.pandalib.bukkit.language.abandon.PMessage;
+import net.bxx2004.pandalib.bukkit.task.Task;
 
 /**
  * 记分板工具

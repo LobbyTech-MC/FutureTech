@@ -1,14 +1,16 @@
 package net.bxx2004.futuretech.core.world;
 
-import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
+import java.util.Random;
+
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.generator.BlockPopulator;
 
-import java.util.Random;
+import com.xzavier0722.mc.plugin.slimefun4.storage.util.StorageCacheUtils;
+
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 public class FutureOrePopulator extends BlockPopulator {
 

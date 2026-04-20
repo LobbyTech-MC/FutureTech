@@ -1,5 +1,7 @@
 package net.bxx2004.futuretech.slimefun.main.items.materials.cpu;
 
+import org.bukkit.inventory.ItemStack;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
@@ -10,7 +12,6 @@ import net.bxx2004.futuretech.slimefun.SlimefunFactory;
 import net.bxx2004.futuretech.slimefun.main.Item;
 import net.bxx2004.futuretech.slimefun.main.machine.FT_CPUMAKER;
 import net.bxx2004.pandalib.bukkit.listener.PListener;
-import org.bukkit.inventory.ItemStack;
 
 @RegisterItem
 public class FT_SIRICPU extends Item<SlimefunItemStack> {

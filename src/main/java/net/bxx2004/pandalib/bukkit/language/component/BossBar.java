@@ -1,9 +1,5 @@
 package net.bxx2004.pandalib.bukkit.language.component;
 
-import net.bxx2004.pandalib.PandaLib;
-import net.bxx2004.pandalib.bukkit.language.Text;
-import net.bxx2004.pandalib.bukkit.language.TextBox;
-import net.bxx2004.pandalib.bukkit.language.TextType;
 import org.bukkit.Bukkit;
 import org.bukkit.boss.BarColor;
 import org.bukkit.boss.BarFlag;
@@ -11,6 +7,11 @@ import org.bukkit.boss.BarStyle;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
+
+import net.bxx2004.pandalib.PandaLib;
+import net.bxx2004.pandalib.bukkit.language.Text;
+import net.bxx2004.pandalib.bukkit.language.TextBox;
+import net.bxx2004.pandalib.bukkit.language.TextType;
 
 public class BossBar extends Text {
     private org.bukkit.boss.BossBar bar;

@@ -1,5 +1,10 @@
 package net.bxx2004.futuretech.slimefun.main.items.materials.basic;
 
+import org.bukkit.Material;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.ItemStack;
+
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
@@ -11,10 +16,6 @@ import net.bxx2004.futuretech.slimefun.inventory.GuideMenu;
 import net.bxx2004.futuretech.slimefun.main.Item;
 import net.bxx2004.pandalib.bukkit.item.PItemStack;
 import net.bxx2004.pandalib.bukkit.listener.PListener;
-import org.bukkit.Material;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.ItemStack;
 
 @RegisterItem
 public class FT_GUIDE extends Item<PItemStack> {

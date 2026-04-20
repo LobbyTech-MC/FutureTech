@@ -1,9 +1,10 @@
 package net.bxx2004.pandalib.bukkit.block;
 
-import net.bxx2004.pandalib.java.util.MultipleReturn;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.block.Block;
+
+import net.bxx2004.pandalib.java.util.MultipleReturn;
 
 public class BlockIndex {
     private MultipleReturn<Integer> o;

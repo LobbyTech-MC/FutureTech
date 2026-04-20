@@ -1,9 +1,10 @@
 package net.bxx2004.pandalib.bukkit.gui.abandon;
 
-import net.bxx2004.pandalib.bukkit.listener.PListener;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
+
+import net.bxx2004.pandalib.bukkit.listener.PListener;
 
 /**
  * 快速自定义GUI的抽象类

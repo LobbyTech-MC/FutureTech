@@ -1,10 +1,11 @@
 package net.bxx2004.pandalib.bukkit.particle.application;
 
-import net.bxx2004.pandalib.bukkit.particle.Particle;
-
-import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
+
+import javax.imageio.ImageIO;
+
+import net.bxx2004.pandalib.bukkit.particle.Particle;
 
 public class ImageParticle implements Particle {
     int width = 0;

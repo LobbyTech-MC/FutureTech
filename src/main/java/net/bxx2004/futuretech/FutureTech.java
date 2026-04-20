@@ -1,5 +1,16 @@
 package net.bxx2004.futuretech;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Vindicator;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.entity.EntityDeathEvent;
+import org.bukkit.generator.ChunkGenerator;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.clip.placeholderapi.PlaceholderAPI;
@@ -16,16 +27,6 @@ import net.bxx2004.pandalib.bukkit.util.PCooldown;
 import net.bxx2004.pandalib.bukkit.util.PMath;
 import net.bxx2004.pandalibloader.BukkitPlugin;
 import net.bxx2004.pandalibloader.Path;
-import org.bukkit.Bukkit;
-import org.bukkit.Material;
-import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Vindicator;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.entity.EntityDeathEvent;
-import org.bukkit.generator.ChunkGenerator;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 @Path(pack = "net.bxx2004.futuretech.FutureTech")
 public class FutureTech extends BukkitPlugin implements SlimefunAddon {

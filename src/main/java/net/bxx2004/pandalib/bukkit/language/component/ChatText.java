@@ -1,16 +1,17 @@
 package net.bxx2004.pandalib.bukkit.language.component;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.bukkit.command.CommandSender;
+import org.bukkit.scheduler.BukkitRunnable;
+
 import net.bxx2004.pandalib.PandaLib;
 import net.bxx2004.pandalib.bukkit.language.AnimationText;
 import net.bxx2004.pandalib.bukkit.language.TextBox;
 import net.bxx2004.pandalib.bukkit.language.TextType;
 import net.bxx2004.pandalib.bukkit.language.abandon.PMessage;
 import net.bxx2004.pandalib.bukkit.manager.Lang;
-import org.bukkit.command.CommandSender;
-import org.bukkit.scheduler.BukkitRunnable;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ChatText extends AnimationText {
     private TextBox box;

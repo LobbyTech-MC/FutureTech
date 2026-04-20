@@ -1,12 +1,13 @@
 package net.bxx2004.pandalib.bukkit.language.script.scripts;
 
+import org.bukkit.command.CommandSender;
+
 import net.bxx2004.pandalib.bukkit.language.AnimationText;
 import net.bxx2004.pandalib.bukkit.language.component.ChatText;
 import net.bxx2004.pandalib.bukkit.language.script.Script;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptBox;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptImpl;
 import net.bxx2004.pandalib.bukkit.language.script.ScriptUtil;
-import org.bukkit.command.CommandSender;
 
 //tell <Animation> value
 @Script

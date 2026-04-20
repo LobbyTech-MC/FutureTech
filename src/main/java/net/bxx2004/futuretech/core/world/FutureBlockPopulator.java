@@ -1,9 +1,7 @@
 package net.bxx2004.futuretech.core.world;
 
-import net.bxx2004.futuretech.FutureTech;
-import net.bxx2004.futuretech.core.data.ConfigManager;
-import net.bxx2004.pandalib.bukkit.entity.PEntity;
-import net.bxx2004.pandalib.bukkit.entity.PEntityMeta;
+import java.util.Random;
+
 import org.bukkit.Chunk;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -12,7 +10,10 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.generator.BlockPopulator;
 import org.bukkit.metadata.FixedMetadataValue;
 
-import java.util.Random;
+import net.bxx2004.futuretech.FutureTech;
+import net.bxx2004.futuretech.core.data.ConfigManager;
+import net.bxx2004.pandalib.bukkit.entity.PEntity;
+import net.bxx2004.pandalib.bukkit.entity.PEntityMeta;
 
 public class FutureBlockPopulator extends BlockPopulator {
     @Override
