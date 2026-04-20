@@ -112,7 +112,7 @@ public class FutureWorldGenerator extends ChunkGenerator {
             }
             
             // EditSession 会在 try-with-resources 结束时自动调用 flushQueue()
-            
+            editSession.flushQueue();
         } catch (Exception e) {
             e.printStackTrace();
         }
